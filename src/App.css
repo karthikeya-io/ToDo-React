@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+html {
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);;
+  background-repeat:repeat;
+  background-size:cover;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#body {
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);;
+  font-size: 20px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page {
+  display:flex;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addtododiv {
+  flex: 20%;
+}
+
+
+.profile-right {
+  flex: 80%;
+}
+
+.list {
+  padding: 10px;
+  min-height: 500px;
+  background-color: white;
+  margin: 20px;
+}
+
+.logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-title {
   color: white;
+  display: block;
+  text-align: center;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+#card {
+  text-align: center;
+  max-width: 500px;
+  height: 500px;
+  margin-left: 5px;
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+}
+.input-text {
+  max-width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+#btn-addtodo {
+  max-width: 200px;
+}
+
+.input-check {
+  text-align:justify;
+}
+
+
+ul{
+  list-style: none;
+}
+
+
+.btn {
+  margin: 20px;
+}
+
+.list-item {
+  padding: 0px 0 0 60px;
+  margin: 10px auto auto auto ;
+  width: 75%;
+  height: 80px;
+  max-width: 800px;
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+}
+
+.list-item-done {
+  padding: 0px 0 0 60px;
+  margin: 10px auto auto auto ;
+  width: 75%;
+  height: 80px;
+  max-width: 800px;
+  color: white;
+  background-color: greenyellow;
+  background-image: linear-gradient(140deg, #4af600 0%, #28da66 50%, #73d641 75%);
+}
+.input-check {
+  margin-top: 30px;
+}
+.list-content {
+  display:inline;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+.list-contentp {
+  margin-top: 20px;
+
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-contentp { 
+    position:absolute;
+    max-inline-size: min(500px, 40%);
+    overflow: hidden;
+    /* word-break: break-all;
+    overflow-x: scroll;
+    white-space: nowrap; */
+}
+
+.btn-delete {
+  position:absolute;
+  display:inline;
+  margin-left: min(50%, 550px);
 }
